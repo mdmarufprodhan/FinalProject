@@ -1,0 +1,54 @@
+{% extends 'example.html' %}
+
+{% block content %}
+<div class="container">
+  <div style="text-align:center">
+    <p>Housing solution:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="Dhaka">Bangladesh</option>
+          <option value="Bogra">Dhaka</option>
+          <option value="Bangladesh">Rangpur</option>
+        </select>
+        <label for="subject">Subject</label>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div><div class="container">
+  <div style="text-align:center">
+  </div>
+  <div class="row">
+    <div class="column">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="Dhaka">Bangladesh</option>
+          <option value="Rangpur">Dhaka</option>
+          <option value="Bogra">Bangladesh</option>
+        </select>
+        <label for="subject">Subject</label>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}

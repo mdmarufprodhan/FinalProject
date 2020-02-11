@@ -1,0 +1,20 @@
+
+
+{% extends 'example.html' %}
+
+{% block content %}
+
+        <h1>Search</h1>
+
+
+{ % for s in allflat % }
+
+                {{ s.f_id }}
+
+        { % endfor % }
+
+
+<h1>End</h1>
+
+{% endblock %}
+

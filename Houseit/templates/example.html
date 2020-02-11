@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static '/H1/enter-style2.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<head>
+
+<title>Houseit</title>
+
+
+
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+
+
+<header>
+  <center>
+    <h1>
+  <span> <a href=""><img style="width: 120px; height: 80px;"
+      alt="logo"
+ src="{% static '/H1/images/a.png' %}"/></a>
+
+
+  </span>____________________Houseit.com______________________ <span><a href="https://www.facebook.com/" target="blank"><img style="width: 60px; height: 60px;"
+      alt="fb"
+ src="{% static 'H1/images/fb.png' %}"/></a> </span></h1>
+</center>
+
+
+</header>
+
+<section>
+  <nav>
+    <div class="sidebar">
+  <a href="/"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="/search"><i class="fa fa-fw fa-search"></i> Search</a>
+  <a href="/giveadd"><i class="fa fa-fw fa-user"></i> GiveAdd</a>
+  <a href="/signin"><i class="fa fa-fw fa-user"></i> Sign in</a>
+      <a href="/signup"><i class="fa fa-fw fa-user"></i> Sign up</a>
+        <a href="/about"><i class="fa fa-fw fa-user"></i> About</a>
+      <a href="/contact"><i class="fa fa-fw fa-envelope"></i> Contact </a>
+
+</div>
+
+  </nav>
+
+  <article>
+
+    {% block content %}
+
+    <h1>Example Extension</h1>
+    {% endblock %}
+
+
+
+
+
+
+  </article>
+</section>
+
+<footer>
+  <p>All rights reserved by Houseit.com Team</p>
+</footer>
+
+</body>
+</html>

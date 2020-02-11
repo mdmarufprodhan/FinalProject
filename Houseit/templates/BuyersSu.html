@@ -1,0 +1,23 @@
+{% extends 'example.html' %}
+
+{% block content %}
+
+        <h1>bsu</h1>
+
+<form method="POST">
+
+    {% csrf_token %}
+
+
+    <input type="text" name="bname" placeholder="Name"> <br>
+    <input type="number" name="bcontact" placeholder="Contract"> <br>
+    <input type="number" name="bid" placeholder="ID"> <br>
+    <input type="text" name="bemail" placeholder="Mail"> <br>
+    <input type="text" name="baddress" placeholder="Address"> <br>
+    <input type="password" name="bpass" placeholder="Password"> <br>
+    <input type="password" name="bpass2" placeholder="Password"> <br>
+    <input type="submit" value="Submit"/>
+
+</form>
+
+{% endblock %}
